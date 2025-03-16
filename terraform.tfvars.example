@@ -1,0 +1,2 @@
+whitelisted_ips = ["1.2.3.4/32"] # Replace with your IP address/range for ssh access to the EC2 instance
+ssh_key_name    = "aws-deployment-key"

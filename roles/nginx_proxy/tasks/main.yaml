@@ -1,0 +1,52 @@
+---
+- name: Install Nginx
+  apt:
+    name: nginx
+    state: latest
+    update_cache: yes
+  become: yes
+
+- name: Ensure certs directory exists
+  file:
+    path: /etc/nginx/certs
+    state: directory
+    mode: '0755'
+  become: yes
+
+- name: Generate certificates if cert_generate is true
+  include_tasks: cert.yaml
+  when: cert_generate | default(false)
+
+- name: Copy SSL certificates if cert_generate is false
+  copy:
+    src: "{{ item.src }}"
+    dest: "/etc/nginx/certs/{{ item.dest }}"
+    mode: '0644'
+  with_items:
+    - { src: 'files/server.crt', dest: 'server.crt' }
+    - { src: 'files/server.key', dest: 'server.key' }
+    - { src: 'files/ca.crt', dest: 'ca.crt' }
+    - { src: 'files/client.crt', dest: 'client.crt' }
+    - { src: 'files/client.key', dest: 'client.key' }
+  when: not (cert_generate | default(false))
+  become: yes
+  notify: Restart Nginx
+
+- name: Copy Nginx configuration
+  template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/nginx.conf
+    mode: '0644'
+  become: yes
+  notify: Restart Nginx
+
+- name: Disable IPv6 in sysctl
+  sysctl:
+    name: "{{ item.name }}"
+    value: "1"
+    state: present
+    reload: yes
+  with_items:
+    - { name: "net.ipv6.conf.all.disable_ipv6" }
+    - { name: "net.ipv6.conf.default.disable_ipv6" }
+  become: yes

@@ -1,0 +1,501 @@
+admin@ip-10-0-1-144:~/.chain-maind$ cat chain-maind-latest-500.log
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service stop impl={"Data":{},"Logger":{}} module=p2p msg={} peer={"id":"fb08efa0a77214aea28daac9cccefb0ca52297db","ip":"54.38.193.209","port":26656}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM ERR Connection failed @ sendRoutine conn={"Logger":{}} err="pong timeout" module=p2p peer={"id":"783a0ef71857a43e3ec610cd96b2a23c9f8f0ff7","ip":"163.172.33.85","port":33582}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service stop impl={"Logger":{}} module=p2p msg={} peer={"id":"783a0ef71857a43e3ec610cd96b2a23c9f8f0ff7","ip":"163.172.33.85","port":33582}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM ERR Stopping peer for error err="pong timeout" module=p2p peer={"Data":{},"Logger":{}}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service stop impl={"Data":{},"Logger":{}} module=p2p msg={} peer={"id":"783a0ef71857a43e3ec610cd96b2a23c9f8f0ff7","ip":"163.172.33.85","port":33582}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service start impl="Peer{MConn{18.138.159.89:26656} f9eef2455cb7bfae6e0892273dd53fb020f011d6 out}" module=p2p msg={} peer={"id":"f9eef2455cb7bfae6e0892273dd53fb020f011d6","ip":"18.138.159.89","port":26656}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service start impl=MConn{18.138.159.89:26656} module=p2p msg={} peer={"id":"f9eef2455cb7bfae6e0892273dd53fb020f011d6","ip":"18.138.159.89","port":26656}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"f9eef2455cb7bfae6e0892273dd53fb020f011d6","ip":"18.138.159.89","port":26656}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service stop impl={"Logger":{}} module=p2p msg={} peer={"id":"f9eef2455cb7bfae6e0892273dd53fb020f011d6","ip":"18.138.159.89","port":26656}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+Mar 15 10:50:44 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service stop impl={"Data":{},"Logger":{}} module=p2p msg={} peer={"id":"f9eef2455cb7bfae6e0892273dd53fb020f011d6","ip":"18.138.159.89","port":26656}
+Mar 15 10:50:46 ip-10-0-1-144 chain-maind[2967]: 10:50AM ERR Connection failed @ sendRoutine conn={"Logger":{}} err="pong timeout" module=p2p peer={"id":"9ac31b71306a5f8b7e94492c6bf244f035039543","ip":"18.136.191.106","port":50646}
+Mar 15 10:50:46 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service stop impl={"Logger":{}} module=p2p msg={} peer={"id":"9ac31b71306a5f8b7e94492c6bf244f035039543","ip":"18.136.191.106","port":50646}
+Mar 15 10:50:46 ip-10-0-1-144 chain-maind[2967]: 10:50AM ERR Stopping peer for error err="pong timeout" module=p2p peer={"Data":{},"Logger":{}}
+Mar 15 10:50:46 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service stop impl={"Data":{},"Logger":{}} module=p2p msg={} peer={"id":"9ac31b71306a5f8b7e94492c6bf244f035039543","ip":"18.136.191.106","port":50646}
+Mar 15 10:50:48 ip-10-0-1-144 chain-maind[2967]: 10:50AM ERR Connection failed @ sendRoutine conn={"Logger":{}} err="pong timeout" module=p2p peer={"id":"18d480b25041cb616988519ac6984ad27b2eb307","ip":"108.209.102.187","port":51634}
+Mar 15 10:50:48 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service stop impl={"Logger":{}} module=p2p msg={} peer={"id":"18d480b25041cb616988519ac6984ad27b2eb307","ip":"108.209.102.187","port":51634}
+Mar 15 10:50:48 ip-10-0-1-144 chain-maind[2967]: 10:50AM ERR Stopping peer for error err="pong timeout" module=p2p peer={"Data":{},"Logger":{}}
+Mar 15 10:50:48 ip-10-0-1-144 chain-maind[2967]: 10:50AM INF service stop impl={"Data":{},"Logger":{}} module=p2p msg={} peer={"id":"18d480b25041cb616988519ac6984ad27b2eb307","ip":"108.209.102.187","port":51634}
+Mar 15 10:50:49 ip-10-0-1-144 systemd[1]: Stopping chain-maind.service - Chain-maind Node Service...
+Mar 15 10:50:49 ip-10-0-1-144 systemd[1]: chain-maind.service: Deactivated successfully.
+Mar 15 10:50:49 ip-10-0-1-144 systemd[1]: Stopped chain-maind.service - Chain-maind Node Service.
+Mar 15 10:50:49 ip-10-0-1-144 systemd[1]: chain-maind.service: Consumed 5min 40.966s CPU time.
+Mar 15 10:50:49 ip-10-0-1-144 systemd[1]: Started chain-maind.service - Chain-maind Node Service.
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF starting node with ABCI Tendermint in-process
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=multiAppConn module=proxy msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start connection=query impl=localClient module=abci-client msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start connection=snapshot impl=localClient module=abci-client msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start connection=mempool impl=localClient module=abci-client msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start connection=consensus impl=localClient module=abci-client msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=EventBus module=events msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=PubSub module=pubsub msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=IndexerService module=txindex msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF ABCI Handshake App Info hash="��<�Khݛ��\r\x05!\t�\x15��r��!7$\x02\x0e˨\x1d|T2" height=22604835 module=consensus protocol-version=0 software-version=4.2.14
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF ABCI Replay Blocks appHeight=22604835 module=consensus stateHeight=22604835 storeHeight=22604836
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Replay last block using real app module=consensus
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139374869basecro from=mint module=x/bank
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604836 module=consensus num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3137342034203432203437203739203138312036322034392031303320313631203535203230302032333420313132203132342032313320323433203135392031313920313632203430203233312032333420323330203437203136362031312039342031323020363420313432203139345D3A313538454332347D
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=AE042A2F4FB53E3167A137C8EA707CD5F39F77A228E7EAE62FA60B5E78408EC2 height=22604836 module=consensus num_txs=1
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Completed ABCI Handshake - CometBFT and App are synced appHash="�\x04*/O�>1g�7��p|���w�(���/�\v^x@��" appHeight=22604835 module=consensus
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Version info abci=0.17.0 block=11 cmtbft_version=0.34.35 commit_hash= p2p=8
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF This node is not a validator addr=5F06A44E308598C92DA8E0141AC5C82E5C6D1712 module=consensus pubKey=Wr3Vw6OfoFtmXNZ7AxarubNijgsloqIcFzyZtWTGu2o=
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF P2P Node ID ID=8de7e355577b4f30e858a120b64f1ca941f3d679 file=/home/admin/.chain-maind/config/node_key.json module=p2p
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Adding persistent peers addrs=["e1d7ff02b78044795371beb1cd5fb803f9389256@seed-1.cronos-pos.org:26656","2c55809558a4e491e9995962e10c026eb9014655@seed-2.cronos-pos.org:26656"] module=p2p
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604836 module=txindex
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Adding unconditional peer ids ids=[] module=p2p
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Add our address to book addr={"id":"8de7e355577b4f30e858a120b64f1ca941f3d679","ip":"54.85.208.65","port":26656} book=/home/admin/.chain-maind/config/addrbook.json module=p2p
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Add our address to book addr={"id":"8de7e355577b4f30e858a120b64f1ca941f3d679","ip":"0.0.0.0","port":26656} book=/home/admin/.chain-maind/config/addrbook.json module=p2p
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=Node msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="P2P Switch" module=p2p msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=PEX module=pex msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start book=/home/admin/.chain-maind/config/addrbook.json impl=AddrBook module=p2p msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Starting pprof server laddr=localhost:6060
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF serve module=rpc-server msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=BlockchainReactor module=blockchain msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=BlockPool module=blockchain msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=ConsensusReactor module=consensus msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Reactor  module=consensus waitSync=true
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=Evidence module=evidence msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=StateSync module=statesync msg={}
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Ensure peers module=pex numDialing=0 numInPeers=0 numOutPeers=0 numToDial=20
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Saving AddrBook to file book=/home/admin/.chain-maind/config/addrbook.json module=p2p size=1060
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF starting API server... module=api-server
+Mar 15 10:50:49 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF serve module=api-server msg={}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{108.209.102.186:65343} 458da1e065a62e09df1d6be4da23173ffe343083 in}" module=p2p msg={} peer={"id":"458da1e065a62e09df1d6be4da23173ffe343083","ip":"108.209.102.186","port":65343}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{108.209.102.186:65343} module=p2p msg={} peer={"id":"458da1e065a62e09df1d6be4da23173ffe343083","ip":"108.209.102.186","port":65343}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{37.59.18.132:16241} e2fd622d863acfb9b03000f62f091887e7f5521f out}" module=p2p msg={} peer={"id":"e2fd622d863acfb9b03000f62f091887e7f5521f","ip":"37.59.18.132","port":16241}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{37.59.18.132:16241} module=p2p msg={} peer={"id":"e2fd622d863acfb9b03000f62f091887e7f5521f","ip":"37.59.18.132","port":16241}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"e2fd622d863acfb9b03000f62f091887e7f5521f","ip":"37.59.18.132","port":16241}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service stop impl={"Logger":{}} module=p2p msg={} peer={"id":"e2fd622d863acfb9b03000f62f091887e7f5521f","ip":"37.59.18.132","port":16241}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service stop impl={"Data":{},"Logger":{}} module=p2p msg={} peer={"id":"e2fd622d863acfb9b03000f62f091887e7f5521f","ip":"37.59.18.132","port":16241}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{213.133.120.46:26656} 178847b86056bd11f595d3fe5ab7091e2a602aaf out}" module=p2p msg={} peer={"id":"178847b86056bd11f595d3fe5ab7091e2a602aaf","ip":"213.133.120.46","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{213.133.120.46:26656} module=p2p msg={} peer={"id":"178847b86056bd11f595d3fe5ab7091e2a602aaf","ip":"213.133.120.46","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"178847b86056bd11f595d3fe5ab7091e2a602aaf","ip":"213.133.120.46","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service stop impl={"Logger":{}} module=p2p msg={} peer={"id":"178847b86056bd11f595d3fe5ab7091e2a602aaf","ip":"213.133.120.46","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service stop impl={"Data":{},"Logger":{}} module=p2p msg={} peer={"id":"178847b86056bd11f595d3fe5ab7091e2a602aaf","ip":"213.133.120.46","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{81.0.220.169:26656} 8f1e1a60e18e2162035a4ef0b2e795d94d13755b out}" module=p2p msg={} peer={"id":"8f1e1a60e18e2162035a4ef0b2e795d94d13755b","ip":"81.0.220.169","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{81.0.220.169:26656} module=p2p msg={} peer={"id":"8f1e1a60e18e2162035a4ef0b2e795d94d13755b","ip":"81.0.220.169","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"8f1e1a60e18e2162035a4ef0b2e795d94d13755b","ip":"81.0.220.169","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service stop impl={"Logger":{}} module=p2p msg={} peer={"id":"8f1e1a60e18e2162035a4ef0b2e795d94d13755b","ip":"81.0.220.169","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service stop impl={"Data":{},"Logger":{}} module=p2p msg={} peer={"id":"8f1e1a60e18e2162035a4ef0b2e795d94d13755b","ip":"81.0.220.169","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139374964basecro from=mint module=x/bank
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{18.136.191.106:26656} 9ac31b71306a5f8b7e94492c6bf244f035039543 out}" module=p2p msg={} peer={"id":"9ac31b71306a5f8b7e94492c6bf244f035039543","ip":"18.136.191.106","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{18.136.191.106:26656} module=p2p msg={} peer={"id":"9ac31b71306a5f8b7e94492c6bf244f035039543","ip":"18.136.191.106","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"9ac31b71306a5f8b7e94492c6bf244f035039543","ip":"18.136.191.106","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service stop impl={"Logger":{}} module=p2p msg={} peer={"id":"9ac31b71306a5f8b7e94492c6bf244f035039543","ip":"18.136.191.106","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service stop impl={"Data":{},"Logger":{}} module=p2p msg={} peer={"id":"9ac31b71306a5f8b7e94492c6bf244f035039543","ip":"18.136.191.106","port":26656}
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604837 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3231302032323320323720313538203630203520323620323132203135203130312037342033302031393020323033203520313531203936203134312031333420313934203134362039322032343220313039203230392031323220333920332032333120323530203333203139375D3A313538454332357D
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=D2DF1B9E3C051AD40F654A1EBECB0597608D86C2925CF26DD17A2703E7FA21C5 height=22604837 module=state num_txs=0
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604837 module=txindex
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375059basecro from=mint module=x/bank
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604838 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:50 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF updates to validators module=state updates=471465719973077C0F77B0939403031999A388C5:20713095827
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B313936203233332034342032323120313639203235312032343920323039203136332033382031393920313735203235203636203734203135352032313020313939203233312032343720313320323231203139312032323020323033203332203135302031333320313034203935203739203133365D3A313538454332367D
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=C4E92CDDA9FBF9D1A326C7AF19424A9BD2C7E7F70DDDBFDCCB209685685F4F88 height=22604838 module=state num_txs=1
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604838 module=txindex
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375153basecro from=mint module=x/bank
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604839 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B383920333020313236203138332031382032333320313436203634203134322031323220313034203139332032333220323138203135342031373520323033203134332031313320313739203234332032333520323130203238203138392031333320313636203939203138352031313020313636203234345D3A313538454332377D
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=591E7EB712E992408E7A68C1E8DA9AAFCB8F71B3F3EBD21CBD85A663B96EA6F4 height=22604839 module=state num_txs=0
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604839 module=txindex
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375248basecro from=mint module=x/bank
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604840 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3230352031303720313938203133312032303120323535203233352031343620333920323432203236203134362031373220323334203937203934203234203731203138342032323220363820313334203233382031303220313720343720313231203138332032303620323036203134322037355D3A313538454332387D
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=CD6BC683C9FFEB9227F21A92ACEA615E1847B8DE4486EE66112F79B7CECE8E4B height=22604840 module=state num_txs=0
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604840 module=txindex
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375342basecro from=mint module=x/bank
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604841 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B37332039382039392032382031383420353120313036203231372031353720323131203533203739203736203139342031313720363020313938203220383120363020323333203135362031343420353320313632203230203330203238203132322039382031363220305D3A313538454332397D
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=4962631CB8336AD99DD3354F4CC2753CC602513CE99C9035A2141E1C7A62A200 height=22604841 module=state num_txs=0
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604841 module=txindex
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375437basecro from=mint module=x/bank
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604842 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B323330203134302035312032343320313732203730203135312032382037362032313120392031353420353120393320313233203234342039322031353320323331203138352031303020363020343820373320313020323432203134332031303820313433203936203136312033315D3A313538454332417D
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=E68C33F3AC46971C4CD3099A335D7BF45C99E7B9643C30490AF28F6C8F60A11F height=22604842 module=state num_txs=0
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604842 module=txindex
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375532basecro from=mint module=x/bank
+Mar 15 10:50:51 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604843 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3135203133342032342032313420313133203135302031313420323031203635203732203331203231382033362035322036352031373620343320313139203231203130352031343620302031313120313937203133362038342032342035342034302031333920323433203231355D3A313538454332427D
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=0F8618D6719672C941481FDA243441B02B77156992006FC588541836288BF3D7 height=22604843 module=state num_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{18.140.172.185:26656} e1d7ff02b78044795371beb1cd5fb803f9389256 out}" module=p2p msg={} peer={"id":"e1d7ff02b78044795371beb1cd5fb803f9389256","ip":"18.140.172.185","port":26656}
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{18.140.172.185:26656} module=p2p msg={} peer={"id":"e1d7ff02b78044795371beb1cd5fb803f9389256","ip":"18.140.172.185","port":26656}
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{108.209.99.65:55161} 90a147c6544776155b492db42f6e8fe2dec3a405 in}" module=p2p msg={} peer={"id":"90a147c6544776155b492db42f6e8fe2dec3a405","ip":"108.209.99.65","port":55161}
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{108.209.99.65:55161} module=p2p msg={} peer={"id":"90a147c6544776155b492db42f6e8fe2dec3a405","ip":"108.209.99.65","port":55161}
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604843 module=txindex
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375626basecro from=mint module=x/bank
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604844 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B313636203130332032333520313938203239203139382031303820323530203132203135362031383320313631203720362031383020313734203133382031343720383120353720393020313036203136332032333020343220343120323032203232332033322031373020313635203135335D3A313538454332437D
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=A667EBC61DC66CFA0C9CB7A10706B4AE8A9351395A6AA3E62A29CADF20AAA599 height=22604844 module=state num_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604844 module=txindex
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375721basecro from=mint module=x/bank
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604845 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3930203235352031313320313033203233382031343920313333203133332039362036362032333220323334203233362031392032333520323820313133203137312031373620333620313520353320323920313531203131312031393820383220323220313834203138302031352033305D3A313538454332447D
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=5AFF7167EE9585856042E8EAEC13EB1C71ABB0240F351D976FC65216B8B40F1E height=22604845 module=state num_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604845 module=txindex
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375816basecro from=mint module=x/bank
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604846 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B31343020343620313830203131312031203720313020393820323034203231322031323020323534203731203636203137372031313320323238203137372031343320313732203132332032342039322039332031333220323320313230203139302033362033302032342038385D3A313538454332457D
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=8C2EB46F01070A62CCD478FE4742B171E4B18FAC7B185C5D841778BE241E1858 height=22604846 module=state num_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604846 module=txindex
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139375910basecro from=mint module=x/bank
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604847 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3535203232332031383320323335203234322032353420313631203836203537203920373520343720313135203231382031363120313933203135392033203133372031323120343120313832203230392039322032323720323439203138382036342031313720313035203230332036385D3A313538454332467D
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=37DFB7EBF2FEA15639094B2F73DAA1C19F03897929B6D15CE3F9BC407569CB44 height=22604847 module=state num_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604847 module=txindex
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376005basecro from=mint module=x/bank
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604848 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B31333320382031323020313833203136203137342036203136392031343220323233203137392034332032323820313835203720313135203135362031343620323432203436203130342031383920313639203235352032323020313036203139382031323220393920323136203134342033335D3A313538454333307D
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=850878B710AE06A98EDFB32BE4B907739C92F22E68BDA9FFDC6AC67A63D89021 height=22604848 module=state num_txs=0
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604848 module=txindex
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376099basecro from=mint module=x/bank
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604849 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B383420313034203832203230392032313520313939203931203139322035352031323320323030203234372034392032333920313320353020333120313620383520313238203139342032353120313435203234352031392031382031343220313138203132382038352036372033345D3A313538454333317D
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=546852D1D7C75BC0377BC8F731EF0D321F105580C2FB91F513128E7680554322 height=22604849 module=state num_txs=1
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604849 module=txindex
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376194basecro from=mint module=x/bank
+Mar 15 10:50:52 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604850 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3130312031373920313234203139342031362033372031383420323439203638203136302031382031373620313432203238203235203133302031342038392036332031303820323131203231392035322031303520313234203136342031343020313539203431203233372037332039375D3A313538454333327D
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=65B37CC21025B8F944A012B08E1C19820E593F6CD3DB34697CA48C9F29ED4961 height=22604850 module=state num_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604850 module=txindex
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376289basecro from=mint module=x/bank
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{18.198.227.149:26656} 2c55809558a4e491e9995962e10c026eb9014655 out}" module=p2p msg={} peer={"id":"2c55809558a4e491e9995962e10c026eb9014655","ip":"18.198.227.149","port":26656}
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{18.198.227.149:26656} module=p2p msg={} peer={"id":"2c55809558a4e491e9995962e10c026eb9014655","ip":"18.198.227.149","port":26656}
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604851 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3136342031313020313831203131382031353520313320323520323139203234302031313420313737203531203137382031333020313730203137203637203936203233322032303120313035203135342031363920313336203138352036382032313520313835203139382032303520313237203132305D3A313538454333337D
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=A46EB5769B0D19DBF072B133B282AA114360E8C9699AA988B944D7B9C6CD7F78 height=22604851 module=state num_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604851 module=txindex
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376383basecro from=mint module=x/bank
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604852 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3139332031363620323238203834203132342038203131322032333820373120313733203330203136392031353920313735203230342031323320343520343220313635203231382035302032333420313530203136392031383120363720313232203139362031363120323335203134203136315D3A313538454333347D
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=C1A6E4547C0870EE47AD1EA99FAFCC7B2D2AA5DA32EA96A9B5437AC4A1EB0EA1 height=22604852 module=state num_txs=1
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604852 module=txindex
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376478basecro from=mint module=x/bank
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604853 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B31363420323133203233362035392032362031333620323432203634203233342032323720333420363920343920313737203231312035312031373120323436203533203232332031363320313320313720323530203133382031323320393520313230203638203731203132332031335D3A313538454333357D
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=A4D5EC3B1A88F240EAE3224531B1D333ABF635DFA30D11FA8A7B5F7844477B0D height=22604853 module=state num_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604853 module=txindex
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376572basecro from=mint module=x/bank
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604854 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3736203231302037352031333520313938203335203233322031393820313330203331203139382035342031353320313539203131352032343820373720343120363320312032333420323137203138392034312031343120323236203133382033322031333520323338203136352037335D3A313538454333367D
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=4CD24B87C623E8C6821FC636999F73F84D293F01EAD9BD298DE28A2087EEA549 height=22604854 module=state num_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604854 module=txindex
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376667basecro from=mint module=x/bank
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604855 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B323334203735203230332031353820323620313520323139203134302032353020323020363520323137203137312033312039302033362035392032303120302033352032343720323532203538203232332031353420313730203133372032343920313630203130312036352039335D3A313538454333377D
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=EA4BCB9E1A0FDB8CFA1441D9AB1F5A243BC90023F7FC3ADF9AAA89F9A065415D height=22604855 module=state num_txs=0
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604855 module=txindex
+Mar 15 10:50:53 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376762basecro from=mint module=x/bank
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604856 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B32353320313738203134352037372033312031322031393020313935203731203232203133342031353420323020313633203134352031393220363320323336203230302032353120313730203020313235203130372036332032303320332037312032303920323620313832203131385D3A313538454333387D
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=FDB2914D1F0CBEC34716869A14A391C03FECC8FBAA007D6B3FCB0347D11AB676 height=22604856 module=state num_txs=1
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376856basecro from=mint module=x/bank
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604856 module=txindex
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604857 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B31313820313936203233322032353420313536203433203130372031373320313036203132352031383520323238203136302035322036302032333620353620323435203137322032323320323137203233372035322039332032333620353620323532203335203838203332203837203233345D3A313538454333397D
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=76C4E8FE9C2B6BAD6A7DB9E4A0343CEC38F5ACDFD9ED345DEC38FC23582057EA height=22604857 module=state num_txs=0
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604857 module=txindex
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139376951basecro from=mint module=x/bank
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604858 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B30203337203133362031313820383020313337203139392032313720313535203132332031312039382031323620353520323130203136312033342032303720313438203233203735203134302037372032323820353220313531203134362034382031323920353520313739203133315D3A313538454333417D
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=002588765089C7D99B7B0B627E37D2A122CF94174B8C4DE4349792308137B383 height=22604858 module=state num_txs=1
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604858 module=txindex
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377045basecro from=mint module=x/bank
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604859 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B32302032303220313234203132382032333120313830203139352032333520313436203234342031343420323131203138342031373220323020323032203136312032303620313930203430203234302034362036342032313020323420323437203138352034322031393820313633203139382034335D3A313538454333427D
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=14CA7C80E7B4C3EB92F490D3B8AC14CAA1CEBE28F02E40D218F7B92AC6A3C62B height=22604859 module=state num_txs=0
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604859 module=txindex
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377140basecro from=mint module=x/bank
+Mar 15 10:50:54 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604860 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B383720313837203532203137302032353220323820313339203132312031303520343020313030203235352038372031363020323336203138342031383920313933203130372031303820393520313135203430203135302034332034362031393220313732203135322031353020313638203130345D3A313538454333437D
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=57BB34AAFC1C8B79692864FF57A0ECB8BDC16B6C5F7328962B2EC0AC9896A868 height=22604860 module=state num_txs=0
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377235basecro from=mint module=x/bank
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604860 module=txindex
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604861 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF updates to validators module=state updates=DDD790E3B6228AFE6EF8F64C0798AC2A5411B08E:16752348856
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B323033203131332037332038342032303520363120383320343320323135203131342031363720363920353420383020313732203230382032333520392031303420313630203620313538203136362031343620313137203132352031373820353420323133203838203232203230305D3A313538454333447D
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=CB714954CD3D532BD772A7453650ACD0EB0968A0069EA692757DB236D55816C8 height=22604861 module=state num_txs=1
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604861 module=txindex
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377329basecro from=mint module=x/bank
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604862 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3133322032302039312036372034352031393120343320313931203233352031383520313633203136352032343520313436203137392033372031393320313837203935203232332032333320313736203933203234203231392032303220333220383420323438203437203235322034395D3A313538454333457D
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=84145B432DBF2BBFEBB9A3A5F592B325C1BB5FDFE9B05D18DBCA2054F82FFC31 height=22604862 module=state num_txs=1
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604862 module=txindex
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377424basecro from=mint module=x/bank
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604863 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3232302032372033342031313920363120313039203139392032333720373220313736203139352031303420312031323920383220363320323237203632203138392031342032303120323138203232362032353320333820313239203933203138203233312031343620313035203132385D3A313538454333467D
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=DC1B22773D6DC7ED48B0C3680181523FE33EBD0EC9DAE2FD26815D12E7926980 height=22604863 module=state num_txs=0
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604863 module=txindex
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377519basecro from=mint module=x/bank
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604864 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B32333320383920343620313639203134352031313120313837203439203136332031322037302032323320313220313632203435203231372032343120313136203139302035332031323820313235203235203432203235332031333620313130203134342032303020373520323120355D3A313538454334307D
+Mar 15 10:50:55 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=E9592EA9916FBB31A30C46DF0CA22DD9F174BE35807D192AFD886E90C84B1505 height=22604864 module=state num_txs=0
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604864 module=txindex
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377613basecro from=mint module=x/bank
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{18.138.49.223:51868} 1149ac9b2d95d2a2c6269ff14deb3db5a11bd769 in}" module=p2p msg={} peer={"id":"1149ac9b2d95d2a2c6269ff14deb3db5a11bd769","ip":"18.138.49.223","port":51868}
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{18.138.49.223:51868} module=p2p msg={} peer={"id":"1149ac9b2d95d2a2c6269ff14deb3db5a11bd769","ip":"18.138.49.223","port":51868}
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604865 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B35302030203830203431203137372039332036372032303120343120313733203138342031383120313836203139302031353820323032203630203131372032343620313120313135203238203135372033312031383020313630203134203137342033382032323420313031203135395D3A313538454334317D
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=32005029B15D43C929ADB8B5BABE9ECA3C75F60B731C9D1FB4A00EAE26E0659F height=22604865 module=state num_txs=0
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604865 module=txindex
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377708basecro from=mint module=x/bank
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604866 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3635203234352031333020313835203233342035322038392037332032343620333120353520313835203135203234392035382037342037332031333920313637203134312032323420313935203231332031362031353820313839203936203231382037352035392032203134315D3A313538454334327D
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=41F582B9EA345949F61F37B90FF93A4A498BA78DE0C3D5109EBD60DA4B3B028D height=22604866 module=state num_txs=0
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604866 module=txindex
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377802basecro from=mint module=x/bank
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604867 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B313431203136312032303820313338203632203136312036302031303220313437203133203134362032312031383620393220313535203137342031393820343720313033203139302038203235312033382032353220323532203635203135322032303920343820323134203339203133305D3A313538454334337D
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=8DA1D08A3EA13C66930D9215BA5C9BAEC62F67BE08FB26FCFC4198D130D62782 height=22604867 module=state num_txs=1
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604867 module=txindex
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377897basecro from=mint module=x/bank
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF packet sent dst_channel=channel-0 dst_port=transfer module=x/ibc/channel sequence=1487380 src_channel=channel-44 src_port=transfer
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF IBC fungible token transfer amount=333059343 module=x/ibc-transfer receiver=crc1ee4wavclqzjhs0q3tfnfu5t0xn2k2yhy6tstlc sender=cro1klkxkl2c59m5dcw4w0683ctfaxklsy9py26jg3 token=basecro
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604868 module=state num_invalid_txs=0 num_valid_txs=3
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B313239203133342031303020323139203632203538203730203136372032303620313736203620323130203233312036342031313820373220313935203235322031323120323234203132372031303220323020313630203232332031343020323620313732203639203134382033203230335D3A313538454334347D
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=818664DB3E3A46A7CEB006D2E7407648C3FC79E07F6614A0DF8C1AAC459403CB height=22604868 module=state num_txs=3
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604868 module=txindex
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139377992basecro from=mint module=x/bank
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604869 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B323331203133382031333320323137203137382032333620323435203136352031363720313938203130392039392032333320323133203231302031323520313239203130332032353420313739203133322036332032362037302033302032342032392036203139203235342035372035325D3A313538454334357D
+Mar 15 10:50:56 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=E78A85D9B2ECF5A5A7C66D63E9D5D27D8167FEB3843F1A461E181D0613FE3934 height=22604869 module=state num_txs=0
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604869 module=txindex
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378086basecro from=mint module=x/bank
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604870 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF updates to validators module=state updates=DDD790E3B6228AFE6EF8F64C0798AC2A5411B08E:16752350621
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{52.77.20.236:54318} 9fadebd579591f810a32bd2feb0fba781b9dde76 in}" module=p2p msg={} peer={"id":"9fadebd579591f810a32bd2feb0fba781b9dde76","ip":"52.77.20.236","port":54318}
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{52.77.20.236:54318} module=p2p msg={} peer={"id":"9fadebd579591f810a32bd2feb0fba781b9dde76","ip":"52.77.20.236","port":54318}
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3135302031303820323530203838203232322039372031373220393120313732203230352031303720353820353520323132203237203130322031343720313638203133302031343320332031343920323037203137382031323520313837203130352031373020343320343220313431203233305D3A313538454334367D
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=966CFA58DE61AC5BACCD6B3A37D41B6693A8828F0395CFB27DBB69AA2B2A8DE6 height=22604870 module=state num_txs=1
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604870 module=txindex
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378181basecro from=mint module=x/bank
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604871 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B35382031343820313934203138312037352032333920313833203233332034352033302039382031352032353120323336203234362031353720393220393620313531203235203235332031373820312031373320333220323120313537203135382031363720313333203637203137345D3A313538454334377D
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=3A94C2B54BEFB7E92D1E620FFBECF69D5C609719FDB201AD20159D9EA78543AE height=22604871 module=state num_txs=0
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604871 module=txindex
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378275basecro from=mint module=x/bank
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604872 module=state num_invalid_txs=0 num_valid_txs=3
+Mar 15 10:50:57 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF updates to validators module=state updates=DDD790E3B6228AFE6EF8F64C0798AC2A5411B08E:16752351456,19367823336C9C889DC7864EA9DE53A16099C3E0:13301193486
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3231362031302038392039312031313120373820363820323332203136382031363220323533203134322031353520313531203820313335203936203139382033332031313320353720323531203137203733203234362032323920313937203736203137332031333320323438203133395D3A313538454334387D
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=D80A595B6F4E44E8A8A2FD8E9B97088760C6217139FB1149F6E5C54CAD85F88B height=22604872 module=state num_txs=3
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604872 module=txindex
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378370basecro from=mint module=x/bank
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF client state updated client-id=07-tendermint-1122 height=1-18577242 module=x/ibc/client
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF packet acknowledged dst_channel=channel-0 dst_port=transfer module=x/ibc/channel sequence=1487380 src_channel=channel-44 src_port=transfer
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604873 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B313735203837203232382032343020323036203836203438203233382031333520313838203730203230352032323020323920383720313038203738203138312038372036382039322031313820313838203137392034332031343120343720313933203220313035203133312031325D3A313538454334397D
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=AF57E4F0CE5630EE87BC46CDDC1D576C4EB557445C76BCB32B8D2FC10269830C height=22604873 module=state num_txs=1
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604873 module=txindex
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378465basecro from=mint module=x/bank
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604874 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF updates to validators module=state updates=471465719973077C0F77B0939403031999A388C5:20713095950
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B31303820313638203138392032323120373620313738203135332032342032303220323435203230322036352031373920382031373820312031393920363720313632203231392032313720353320323520313539203438203232322034362031303820383920313037203138362039395D3A313538454334417D
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=6CA8BDDD4CB29918CAF5CA41B308B201C743A2DBD935199F30DE2E6C596BBA63 height=22604874 module=state num_txs=1
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604874 module=txindex
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378559basecro from=mint module=x/bank
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604875 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B32303420313130203132302037382034332032303520343820373920323030203433203233372031393420323031203235332032303220383120323520323720393020313736203730203138302031333420323520323237203231332038302036342032323420373520323433203133335D3A313538454334427D
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=CC6E784E2BCD304FC82BEDC2C9FDCA51191B5AB046B48619E3D55040E04BF385 height=22604875 module=state num_txs=0
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604875 module=txindex
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378654basecro from=mint module=x/bank
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF client state updated client-id=07-tendermint-33 height=1-31546532 module=x/ibc/client
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF packet received dst_channel=channel-10 dst_port=transfer module=x/ibc/channel sequence=185588 src_channel=channel-5 src_port=transfer
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF acknowledgement written dst_channel=channel-10 dst_port=transfer module=x/ibc/channel sequence=185588 src_channel=channel-5 src_port=transfer
+Mar 15 10:50:58 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604876 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3230372031322032353520313933203134312033203733203138322031333620313738203234203138322031372038392031373820313833203838203232362032353020313033203235332033203130322033203539203638203232392037322031383720323239203833203234335D3A313538454334437D
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=CF0CFFC18D0349B688B218B61159B2B758E2FA67FD0366033B44E548BBE553F3 height=22604876 module=state num_txs=1
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604876 module=txindex
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378749basecro from=mint module=x/bank
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604877 module=state num_invalid_txs=0 num_valid_txs=2
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF updates to validators module=state updates=19367823336C9C889DC7864EA9DE53A16099C3E0:13301200070
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl="Peer{MConn{163.172.33.85:46062} 783a0ef71857a43e3ec610cd96b2a23c9f8f0ff7 in}" module=p2p msg={} peer={"id":"783a0ef71857a43e3ec610cd96b2a23c9f8f0ff7","ip":"163.172.33.85","port":46062}
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF service start impl=MConn{163.172.33.85:46062} module=p2p msg={} peer={"id":"783a0ef71857a43e3ec610cd96b2a23c9f8f0ff7","ip":"163.172.33.85","port":46062}
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B36342038302031303920313435203433203230352033312037392031363620313035203232203133302039362032303920363220373620313931203136312031303120313439203520333220313737203138302038352032303220323820312031342032343320313537203232375D3A313538454334447D
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=40506D912BCD1F4FA669168260D13E4CBFA165950520B1B455CA1C010EF39DE3 height=22604877 module=state num_txs=2
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604877 module=txindex
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378843basecro from=mint module=x/bank
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604878 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3836203136203230362031303520383020323331203136342031303820343720313436203130342032353520313739203233332032333920313636203136332038312031393020333620323432203936203136362034322032303820313639203138382031393220323038203334203230312033385D3A313538454334457D
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=5610CE6950E7A46C2F9268FFB3E9EFA6A351BE24F260A62AD0A9BCC0D022C926 height=22604878 module=state num_txs=0
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604878 module=txindex
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139378938basecro from=mint module=x/bank
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604879 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF commit synced commit=436F6D6D697449447B5B3138342032323120313538203232322031322031303520313339203432203132312032343820343820313339203332203131203139392031383620373520313734203232362031333320323135203835203135302031313920313136203132372031353520313530203536203137322032303620345D3A313538454334467D
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF committed state app_hash=B8DD9EDE0C698B2A79F8308B200BC7BA4BAEE285D7559677747F9B9638ACCE04 height=22604879 module=state num_txs=0
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF indexed block events height=22604879 module=txindex
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF minted coins from module account amount=16139379032basecro from=mint module=x/bank
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF executed block height=22604880 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:50:59 ip-10-0-1-144 chain-maind[3341]: 10:50AM INF updates to validators module=state updates=B24B7295DFF3FA909848623AF747145125A342D7:965023320
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B3720323435203934203134332032303220333720323437203230362034362038342032353520333620313336203820313930203133302033362031343120323136203235302038382032343020363920363920313330203230372032323820352031373220323132203230332036365D3A313538454335307D
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=07F55E8FCA25F7CE2E54FF248808BE82248DD8FA58F0454582CFE405ACD4CB42 height=22604880 module=state num_txs=1
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604880 module=txindex
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379127basecro from=mint module=x/bank
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604881 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B323438203139332034302039312031353220323320343720313939203536203133362032303920313833203820313733203538203233342036352035332034362032313520313833203232382032333620313434203134352032333620313432203232362032332034302032333020385D3A313538454335317D
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=F8C1285B98172FC73888D1B708AD3AEA41352ED7B7E4EC9091EC8EE21728E608 height=22604881 module=state num_txs=0
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604881 module=txindex
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379222basecro from=mint module=x/bank
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604882 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B313835203335203230372032353520323031203230382031373220313820323533203133372031343120313630203735203635203134382032343220393620323037203136203637203135332031383320313235203232312035352032392039382032343120323130203238203133382034345D3A313538454335327D
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=B923CFFFC9D0AC12FD898DA04B4194F260CF104399B77DDD371D62F1D21C8A2C height=22604882 module=state num_txs=0
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604882 module=txindex
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379316basecro from=mint module=x/bank
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF packet sent dst_channel=channel-0 dst_port=transfer module=x/ibc/channel sequence=1487381 src_channel=channel-44 src_port=transfer
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF IBC fungible token transfer amount=26729187000 module=x/ibc-transfer receiver=crc1jeu2xn6mggk9h6wk770uh0sprntq5xpsreuw5s sender=cro1k0jlxj82nzn629e4favaqrpvyafu3ljecawvxv token=basecro
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604883 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B31333420353020383620363520323030203230362032323520323334203237203130382036322032313520333020313938203134392032372032313920313736203233382031392032312039203131322031323920313437203131362031343120323320313420313636203238203232365D3A313538454335337D
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=86325641C8CEE1EA1B6C3ED71EC6951BDBB0EE131509708193748D170EA61CE2 height=22604883 module=state num_txs=1
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604883 module=txindex
+Mar 15 10:51:00 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379411basecro from=mint module=x/bank
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604884 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B32323020313138203132352032343620323339203134392032322031373920323033203135382032303820313830203234342038332031323620373020313731203233352032342037302036392031313220313020313932203131302031373820313230203434203139342036302038392036325D3A313538454335347D
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=DC767DF6EF9516B3CB9ED0B4F4537E46ABEB184645700AC06EB2782CC23C593E height=22604884 module=state num_txs=0
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604884 module=txindex
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379505basecro from=mint module=x/bank
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604885 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B323337203131392035312033203132352032343020373620313938203438203130372031363220323720313938203131332031313520323139203233372031323220313238203835203439203131362031343620313639203437203139392031363920323137203135382032333920323338203233385D3A313538454335357D
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=ED7733037DF04CC6306BA21BC67173DBED7A8055317492A92FC7A9D99EEFEEEE height=22604885 module=state num_txs=0
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604885 module=txindex
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379600basecro from=mint module=x/bank
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF client state updated client-id=07-tendermint-1122 height=1-18577255 module=x/ibc/client
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF packet acknowledged dst_channel=channel-0 dst_port=transfer module=x/ibc/channel sequence=1487381 src_channel=channel-44 src_port=transfer
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604886 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B3534203135203330203139203937203130372032333420313633203135203920333320323438203230302038312031373820313738203137372031303120323036203339203938203230372032303720313233203137302031373720383220323136203635203131342035372034365D3A313538454335367D
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=360F1E13616BEAA30F0921F8C851B2B2B165CE2762CFCF7BAAB152D84172392E height=22604886 module=state num_txs=1
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604886 module=txindex
+Mar 15 10:51:01 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379695basecro from=mint module=x/bank
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604887 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B313820312031383820323336203136322031383120313838203233352038382031343820363220373520353120313938203230342031303320313133203139362031343520363920313734203536203431203134382033382032323420343320323035203139312031383920323532203139345D3A313538454335377D
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=1201BCECA2B5BCEB58943E4B33C6CC6771C49145AE38299426E02BCDBFBDFCC2 height=22604887 module=state num_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604887 module=txindex
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379789basecro from=mint module=x/bank
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604888 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF service start impl="Peer{MConn{34.87.151.153:39142} decbf4da94e60a89a11df6ee81a40c4ec1998197 in}" module=p2p msg={} peer={"id":"decbf4da94e60a89a11df6ee81a40c4ec1998197","ip":"34.87.151.153","port":39142}
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF service start impl=MConn{34.87.151.153:39142} module=p2p msg={} peer={"id":"decbf4da94e60a89a11df6ee81a40c4ec1998197","ip":"34.87.151.153","port":39142}
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B343220393520373720313236203735203435203020313732203235312031343320363920313236203139332031393220313936203231332039392032333720323120313035203139342036372034342031333820313039203633203133382039372031303920313534203232352034385D3A313538454335387D
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=2A5F4D7E4B2D00ACFB8F457EC1C0C4D563ED1569C2432C8A6D3F8A616D9AE130 height=22604888 module=state num_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604888 module=txindex
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379884basecro from=mint module=x/bank
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604889 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B32353520393420323020313534203136362031353120313739203132332032303320313937203020313534203136362037362032353020313233203137302031322038312032382031313820323231203634203531203935203232352032323220313836203133392036302031332031355D3A313538454335397D
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=FF5E149AA697B37BCBC5009AA64CFA7BAA0C511C76DD40335FE1DEBA8B3C0D0F height=22604889 module=state num_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604889 module=txindex
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139379979basecro from=mint module=x/bank
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604890 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B3436203233203137332031332033352032353020313331203135342030203132332031343620323535203434203737203231392039322031363220383320323331203133322035342032303020313838203132362036322031373120313933203133382036332031363120323036203233315D3A313538454335417D
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=2E17AD0D23FA839A007B92FF2C4DDB5CA253E78436C8BC7E3EABC18A3FA1CEE7 height=22604890 module=state num_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604890 module=txindex
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380073basecro from=mint module=x/bank
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604891 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B3135203231352032343020333320373220313433203136312033332031353320353320373420313734203930203434203236203638203439203239203139302032343320373920343520323036203632203137312034322031303820383420353220323820323432203235355D3A313538454335427D
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=0FD7F021488FA12199354AAE5A2C1A44311DBEF34F2DCE3EAB2A6C54341CF2FF height=22604891 module=state num_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604891 module=txindex
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380168basecro from=mint module=x/bank
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604892 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B323120323034203131382032323620353820353320333420313932203134362031343820333620323136203134332034342031363120372032323920373420313720313932203132203135392032312035342032303120323520393420323136203132312032303620323534203130375D3A313538454335437D
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=15CC76E23A3522C0929424D88F2CA107E54A11C00C9F1536C9195ED879CEFE6B height=22604892 module=state num_txs=0
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604892 module=txindex
+Mar 15 10:51:02 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380262basecro from=mint module=x/bank
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604893 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B313431203232322031353320383320313337203133352032342036302032303020343520313532203230382037352032392032343820313720323120323231203132312034382031363020313436203231203439203836203935203231322031303120343620323135203230372033315D3A313538454335447D
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=8DDE99538987183CC82D98D04B1DF81115DD7930A0921531565FD4652ED7CF1F height=22604893 module=state num_txs=0
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604893 module=txindex
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380357basecro from=mint module=x/bank
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604894 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B313933203230302031383820333320323138203130342034342030203135382033372031373220313732203434203020383120313138203131312033322036392031373920383120313531203830203333203131332032333020383120313134203933203330203139302037395D3A313538454335457D
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=C1C8BC21DA682C009E25ACAC2C0051766F2045B35197502171E651725D1EBE4F height=22604894 module=state num_txs=0
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604894 module=txindex
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380452basecro from=mint module=x/bank
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604895 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF service start impl="Peer{MConn{108.209.102.187:51643} 18d480b25041cb616988519ac6984ad27b2eb307 in}" module=p2p msg={} peer={"id":"18d480b25041cb616988519ac6984ad27b2eb307","ip":"108.209.102.187","port":51643}
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF service start impl=MConn{108.209.102.187:51643} module=p2p msg={} peer={"id":"18d480b25041cb616988519ac6984ad27b2eb307","ip":"108.209.102.187","port":51643}
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B39332032323520313820323220343720313634203230392032322035342032313120313032203339203132322032313320353920393620313236203232302031373520323235203137392032313220393120313734203231392031363220313034203233302031393620313937203138362038395D3A313538454335467D
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=5DE112162FA4D11636D366277AD53B607EDCAFE1B3D45BAEDBA268E6C4C5BA59 height=22604895 module=state num_txs=1
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604895 module=txindex
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380546basecro from=mint module=x/bank
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604896 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B313438203639203138352031373520323135203134342032303520313239203133372034372031342031343020323038203539203138392031313420343820313132203139203131352032203638203738203420362031203738203233302034203235203938203135385D3A313538454336307D
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=9445B9AFD790CD81892F0E8CD03BBD723070137302444E0406014EE60419629E height=22604896 module=state num_txs=0
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604896 module=txindex
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380641basecro from=mint module=x/bank
+Mar 15 10:51:03 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604897 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B34302031332031383120323535203935203133322038372032362039203233302033203130302031323420313133203130382032313820383920333220353120353120363220313035203734203233332031313320313136203138302031363920313139203835203134392033385D3A313538454336317D
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=280DB5FF5F84571A09E603647C716CDA592033333E694AE97174B4A977559526 height=22604897 module=state num_txs=0
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604897 module=txindex
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380735basecro from=mint module=x/bank
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604898 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B373920343320373620323233203232372032353320313220313137203234203230372031303120393320343920323332203536203233342031333820323233203138352038352032203732203235312031383020353220313132203231312032303020323335203134382031352034395D3A313538454336327D
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=4F2B4CDFE3FD0C7518CF655D31E838EA8ADFB9550248FBB43470D3C8EB940F31 height=22604898 module=state num_txs=0
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604898 module=txindex
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380830basecro from=mint module=x/bank
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604899 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B313835203830203132332031303020323030203131392032312031333120323232203234312031353520323039203234312032343020353620313231203134382032343020343120313336203837203437203936203830203137382035332031343920313120313739203936203234382031375D3A313538454336337D
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=B9507B64C8771583DEF19BD1F1F0387994F02988572F6050B235950BB360F811 height=22604899 module=state num_txs=0
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604899 module=txindex
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139380925basecro from=mint module=x/bank
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604900 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B313320323339203234392037342031333720363120373720323234203133203639203436203136392031393920323535203130342037332032313420323320342031393020353820313633203136302037372039342031313320313220302032313020313032203130322032345D3A313538454336347D
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=0DEFF94A893D4DE00D452EA9C7FF6849D61704BE3AA3A04D5E710C00D2666618 height=22604900 module=state num_txs=0
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604900 module=txindex
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381019basecro from=mint module=x/bank
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604901 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF updates to validators module=state updates=A7E76081779FF5EE79A765DE4D716B4903D6902B:61385150982
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B32313220313539203233372031343820322031313520313139203135203139342031343320313339203932203432203235302039203830203239203233322035362031373220313935203337203233203630203232332034392032303120373920323137203333203232203135355D3A313538454336357D
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=D49FED940273770FC28F8B5C2AFA09501DE838ACC325173CDF31C94FD921169B height=22604901 module=state num_txs=1
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604901 module=txindex
+Mar 15 10:51:04 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381114basecro from=mint module=x/bank
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604902 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B3234392039382031393420313732203134332032323220313836203131312036203235312033312033382039382031343920342031342032343620353620323335203620313832203132362031393720333620323531203137392031323920313238203438203138362031312039365D3A313538454336367D
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=F962C2AC8FDEBA6F06FB1F266295040EF638EB06B67EC524FBB3818030BA0B60 height=22604902 module=state num_txs=0
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604902 module=txindex
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381208basecro from=mint module=x/bank
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF packet sent dst_channel=channel-5 dst_port=transfer module=x/ibc/channel sequence=190444 src_channel=channel-10 src_port=transfer
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF IBC fungible token transfer amount=11600000000 module=x/ibc-transfer receiver=osmo10a3k4hvk37cc4hnxctw4p95fhscd2z6h2rmx0aukc6rm8u9qqx9smfsh7u sender=cro1uz55gh2xjkgnx0c8fsy92fq62zdskuutzmc4mt token=basecro
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604903 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B3231392031373020323238203133362031363820323530203133362032303020343220313537203620323331203135342035302036362031303520323135203231203430203234392032323020373720313238203233372032323620323032203130382032313320313320373020323033203135335D3A313538454336377D
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=DBAAE488A8FA88C82A9D06E79A324269D71528F9DC4D80EDE2CA6CD50D46CB99 height=22604903 module=state num_txs=1
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF service start impl="Peer{MConn{147.135.31.22:46482} ad35da74b193c673b11ceba9f2211dd5a281b045 in}" module=p2p msg={} peer={"id":"ad35da74b193c673b11ceba9f2211dd5a281b045","ip":"147.135.31.22","port":46482}
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF service start impl=MConn{147.135.31.22:46482} module=p2p msg={} peer={"id":"ad35da74b193c673b11ceba9f2211dd5a281b045","ip":"147.135.31.22","port":46482}
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604903 module=txindex
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381303basecro from=mint module=x/bank
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604904 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B3230322030203139322037382036362033312031333220313737203133203138352032313020393420373820393620323420333120313220353120323337203136392032323020313837203132342032303820383120313538203235302031373320313536203638203139392031345D3A313538454336387D
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=CA00C04E421F84B10DB9D25E4E60181F0C33EDA9DCBB7CD0519EFAAD9C44C70E height=22604904 module=state num_txs=1
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604904 module=txindex
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381398basecro from=mint module=x/bank
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF client state updated client-id=07-tendermint-33 height=1-31546650 module=x/ibc/client
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF packet acknowledged dst_channel=channel-5 dst_port=transfer module=x/ibc/channel sequence=190444 src_channel=channel-10 src_port=transfer
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604905 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B31353820313934203230352035372034362031323520313438203130312031353820313832203230312036312033203231382031393620373520323237203939203137302031383720323532203534203139332031303220323137203533203639203135342038332031303620313535203234335D3A313538454336397D
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=9EC2CD392E7D94659EB6C93D03DAC44BE363AABBFC36C166D935459A536A9BF3 height=22604905 module=state num_txs=1
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604905 module=txindex
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381492basecro from=mint module=x/bank
+Mar 15 10:51:05 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604906 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF updates to validators module=state updates=5A59E7377D72923835F6A2A40F24976CA70B95A4:150196355858
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B3235312031333620323236203338203634203631203137332031393320382031303720313038203434203137352031333520393820333620313634203232362038392031363020313132203231302034362032323720313236203436203234332031363620313536203131312038342038395D3A313538454336417D
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=FB88E226403DADC1086B6C2CAF876224A4E259A070D22EE37E2EF3A69C6F5459 height=22604906 module=state num_txs=1
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604906 module=txindex
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381587basecro from=mint module=x/bank
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604907 module=state num_invalid_txs=0 num_valid_txs=1
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B36362032303520313937203238203133322032322031373820323137203731203020323337203132372033392034302033392035362031343820353420313039203231352032303320323435203135382031393320323920313038203233332032392032333320323533203138342032385D3A313538454336427D
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=42CDC51C8416B2D94700ED7F2728273894366DD7CBF59EC11D6CE91DE9FDB81C height=22604907 module=state num_txs=1
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604907 module=txindex
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381682basecro from=mint module=x/bank
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604908 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B31363220313020313533203138312032313720353220383520313339203439203232372039352031323520353520313135203230302031353220313932203134362037332035203130312031323120323033203231332031373120373820373820323336203133362031363520323432203232325D3A313538454336437D
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=A20A99B5D934558B31E35F7D3773C898C09249056579CBD5AB4E4EEC88A5F2DE height=22604908 module=state num_txs=0
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604908 module=txindex
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381776basecro from=mint module=x/bank
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604909 module=state num_invalid_txs=0 num_valid_txs=0
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF commit synced commit=436F6D6D697449447B5B32343120323430203138392031352031393220323220313637203137382031313620313734203935203830203434203531203339203120323432203233302032343220323020383120313536203230352031353320313620313036203139392031393020313533203833203139312037365D3A313538454336447D
+Mar 15 10:51:06 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF committed state app_hash=F1F0BD0FC016A7B274AE5F502C332701F2E6F214519CCD99106AC7BE9953BF4C height=22604909 module=state num_txs=0
+Mar 15 10:51:07 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF indexed block events height=22604909 module=txindex
+Mar 15 10:51:07 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF minted coins from module account amount=16139381871basecro from=mint module=x/bank
+Mar 15 10:51:07 ip-10-0-1-144 chain-maind[3341]: 10:51AM INF executed block height=22604910 module=state num_invalid_txs=0 num_valid_txs=0

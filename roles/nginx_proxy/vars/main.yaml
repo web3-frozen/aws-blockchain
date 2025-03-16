@@ -1,0 +1,1 @@
+nginx_server_name: "localhost"  # Default for local testing; override with IP in production

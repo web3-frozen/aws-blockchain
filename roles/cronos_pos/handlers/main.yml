@@ -1,0 +1,5 @@
+---
+- name: Restart chain-maind service
+  systemd:
+    name: chain-maind
+    state: restarted

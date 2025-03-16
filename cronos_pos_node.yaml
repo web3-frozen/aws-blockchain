@@ -1,0 +1,14 @@
+---
+- name: Configure Cronos POS Archive Node on Debian
+  hosts: cronos_node
+  become: yes
+  roles:
+    - role: cronos_pos
+      vars:
+        use_snapshot: true  # Pass the parameter here if not using default of the roles
+      tags: cronos_pos
+    - role: nginx_proxy
+      vars:
+        nginx_server_name: "{{ ansible_host }}"
+        cert_generate: true  # Controls certificate generation
+      tags: nginx_proxy

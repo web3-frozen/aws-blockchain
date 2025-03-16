@@ -1,0 +1,284 @@
+- name: Update system packages
+  apt:
+    update_cache: yes
+    upgrade: dist
+  changed_when: false
+
+- name: Install dependencies
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - curl
+    - jq
+    - lz4  # For snapshot decompression
+
+- name: Download pre-built Cronos binary
+  get_url:
+    url: "https://github.com/crypto-org-chain/chain-main/releases/download/{{ cronos_version }}/chain-main_{{ cronos_version | regex_replace('v', '') }}_Linux_x86_64.tar.gz"
+    dest: "/tmp/chain-main.tar.gz"
+    mode: "0644"
+  notify: Restart chain-maind service
+
+- name: Extract Cronos binary
+  unarchive:
+    src: "/tmp/chain-main.tar.gz"
+    dest: "/usr/local"
+    remote_src: yes
+    creates: "/usr/local/bin/chain-maind"
+
+- name: Ensure chain-maind is executable
+  file:
+    path: "/usr/local/bin/chain-maind"
+    mode: "0755"
+
+- name: Clean up temporary file
+  file:
+    path: "/tmp/chain-main.tar.gz"
+    state: absent
+
+- name: Create EBS mount directory (if not exists)
+  file:
+    path: "{{ home_dir }}/.chain-maind"
+    state: directory
+    mode: "0755"
+  when: ansible_mounts | selectattr('mount', 'equalto', home_dir + '/.chain-maind') | list | length == 0
+
+- name: Detect EBS device name (non-root volume)
+  set_fact:
+    ebs_device: "{{ ansible_devices | dict2items | selectattr('value.model', 'equalto', 'Amazon Elastic Block Store') | rejectattr('value.holders', 'defined') | rejectattr('value.mounts', 'contains', '/') | map(attribute='key') | first | default('nvme1n1') }}"
+  when: ansible_devices is defined
+
+- name: Debug EBS device
+  debug:
+    msg: "Detected EBS device: {{ ebs_device }}"
+
+- name: Format EBS volume if not formatted
+  filesystem:
+    fstype: ext4
+    dev: "/dev/{{ ebs_device }}"
+  when: 
+    - ansible_devices[ebs_device] is defined 
+    - ansible_devices[ebs_device].partitions | length == 0
+    - ansible_mounts | selectattr('device', 'equalto', '/dev/' + ebs_device) | list | length == 0
+
+- name: Mount EBS volume persistently
+  mount:
+    path: "{{ home_dir }}/.chain-maind"
+    src: "/dev/{{ ebs_device }}"
+    fstype: ext4
+    state: mounted
+  when: 
+    - ansible_devices[ebs_device] is defined
+    - ansible_mounts | selectattr('mount', 'equalto', home_dir + '/.chain-maind') | list | length == 0
+
+- name: Set ownership of mounted EBS volume
+  file:
+    path: "{{ home_dir }}/.chain-maind"
+    owner: admin
+    group: admin
+    mode: "0755"
+
+- name: Initialize Cronos node
+  shell:
+    cmd: "chain-maind init observer --chain-id {{ chain_id }}"
+    creates: "{{ home_dir }}/.chain-maind/config/genesis.json"
+  become: no
+
+- name: Download genesis file
+  get_url:
+    url: "https://raw.githubusercontent.com/crypto-org-chain/mainnet/main/{{ chain_id }}/genesis.json"
+    dest: "{{ home_dir }}/.chain-maind/config/genesis.json"
+    owner: admin
+    group: admin
+  become: no
+
+- name: Patch genesis file with min_commission_rate
+  shell:
+    cmd: |
+      jq '.app_state.staking.params.min_commission_rate = "0.050000000000000000"' {{ home_dir }}/.chain-maind/config/genesis.json > {{ home_dir }}/.chain-maind/config/genesis.json.tmp && \
+      mv {{ home_dir }}/.chain-maind/config/genesis.json.tmp {{ home_dir }}/.chain-maind/config/genesis.json
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure seeds in config.toml (default genesis sync)
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/config.toml"
+    regexp: '^seeds\s*='
+    line: 'seeds = "87c3adb7d8f649c51eebe0d3335d8f9e28c362f2@seed-0.cronos-pos.org:26656,e1d7ff02b78044795371beb1cd5fb803f9389256@seed-1.cronos-pos.org:26656,2c55809558a4e491e9995962e10c026eb9014655@seed-2.cronos-pos.org:26656"'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure persistent peers in config.toml (default genesis sync)
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/config.toml"
+    regexp: '^persistent_peers\s*='
+    line: 'persistent_peers = "e1d7ff02b78044795371beb1cd5fb803f9389256@seed-1.cronos-pos.org:26656,2c55809558a4e491e9995962e10c026eb9014655@seed-2.cronos-pos.org:26656"'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure external address in config.toml
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/config.toml"
+    regexp: '^external_address\s*='
+    line: 'external_address = "{{ ansible_host }}:26656"'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure max outbound peers
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/config.toml"
+    regexp: '^max_num_outbound_peers\s*='
+    line: 'max_num_outbound_peers = 20'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure max inbound peers
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/config.toml"
+    regexp: '^max_num_inbound_peers\s*='
+    line: 'max_num_inbound_peers = 40'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Stop chain-maind service before snapshot operations
+  systemd:
+    name: chain-maind
+    state: stopped
+  when: use_snapshot
+  ignore_errors: yes
+
+- name: Clear existing data directory before snapshot
+  file:
+    path: "{{ home_dir }}/.chain-maind/data"
+    state: absent
+  when: use_snapshot
+  become: no
+
+- name: Ensure data directory exists for snapshot
+  file:
+    path: "{{ home_dir }}/.chain-maind/data"
+    state: directory
+    mode: "0755"
+    owner: admin
+    group: admin
+  when: use_snapshot
+  become: no
+
+- name: Download snapshot file
+  get_url:
+    url: "{{ snapshot_url }}"
+    dest: "{{ home_dir }}/.chain-maind/cronos-snapshot.tar.lz4"
+    owner: admin
+    group: admin
+  become: no
+
+- name: Extract snapshot
+  shell:
+    cmd: "lz4 -d {{ home_dir }}/.chain-maind/cronos-snapshot.tar.lz4 -c | tar -xvf - -C {{ home_dir }}/.chain-maind"
+  become: no
+  notify: Restart chain-maind service
+  when: use_snapshot
+
+- name: Clean up snapshot file
+  file:
+    path: "{{ home_dir }}/.chain-maind/cronos-snapshot.tar.lz4"
+    state: absent
+  when: use_snapshot
+  become: no
+
+- name: Enable REST API in app.toml
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/app.toml"
+    regexp: '^enable\s*='
+    line: 'enable = true'
+    insertafter: '^\[api\]'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure REST API address in app.toml
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/app.toml"
+    regexp: '^address\s*='
+    line: 'address = "tcp://0.0.0.0:1317"'
+    insertafter: '^\[api\]'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure minimum-gas-prices in app.toml
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/app.toml"
+    regexp: '^minimum-gas-prices\s*='
+    line: 'minimum-gas-prices = "0.025basecro"'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure index_events in app.toml
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/app.toml"
+    regexp: '^index_events\s*='
+    line: 'index_events = []'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure iavl-cache-size in app.toml
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/app.toml"
+    regexp: '^iavl-cache-size\s*='
+    line: 'iavl-cache-size = 781250'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Configure iavl-disable-fastnode in app.toml
+  lineinfile:
+    path: "{{ home_dir }}/.chain-maind/config/app.toml"
+    regexp: '^iavl-disable-fastnode\s*='
+    line: 'iavl-disable-fastnode = false'
+    state: present
+  become: no
+  notify: Restart chain-maind service
+
+- name: Create systemd service file for chain-maind
+  copy:
+    content: |
+      [Unit]
+      Description=Chain-maind Node Service
+      ConditionPathExists=/usr/local/bin/chain-maind
+      After=network.target
+
+      [Service]
+      Type=simple
+      User=admin
+      WorkingDirectory={{ home_dir }}/.chain-maind
+      ExecStart=/usr/local/bin/chain-maind start --home {{ home_dir }}/.chain-maind
+      Restart=on-failure
+      RestartSec=10
+      LimitNOFILE=50000
+
+      [Install]
+      WantedBy=multi-user.target
+    dest: "/etc/systemd/system/chain-maind.service"
+    owner: root
+    group: root
+    mode: "0644"
+  notify: Restart chain-maind service
+
+- name: Reload systemd daemon
+  systemd:
+    daemon_reload: yes
+
+- name: Enable and start chain-maind service
+  systemd:
+    name: chain-maind
+    enabled: yes
+    state: started

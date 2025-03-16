@@ -1,0 +1,6 @@
+---
+cronos_version: "v4.2.14"
+chain_id: "crypto-org-chain-mainnet-1"
+home_dir: "/home/admin"
+snapshot_url: "https://snapshots.publicnode.com/cronos-pos-pruned-22603306-22603316.tar.lz4"
+use_snapshot: true

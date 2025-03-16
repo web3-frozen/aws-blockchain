@@ -1,0 +1,57 @@
+---
+- name: Install OpenSSL
+  apt:
+    name: openssl
+    state: present
+  become: yes
+
+- name: Generate CA key and certificate
+  command: >
+    openssl req -x509 -newkey rsa:4096 -keyout /etc/nginx/certs/ca.key -out /etc/nginx/certs/ca.crt
+    -days 365 -nodes -subj "/C=US/ST=State/L=City/O=Cronos/OU=Node/CN=Cronos CA"
+  args:
+    creates: /etc/nginx/certs/ca.crt
+  become: yes
+
+- name: Generate server key and CSR
+  command: >
+    openssl req -new -newkey rsa:4096 -keyout /etc/nginx/certs/server.key -out /etc/nginx/certs/server.csr
+    -nodes -subj "/C=US/ST=State/L=City/O=Cronos/OU=Node/CN={{ ansible_host }}"
+  args:
+    creates: /etc/nginx/certs/server.key
+  become: yes
+
+- name: Sign server certificate with CA
+  command: >
+    openssl x509 -req -in /etc/nginx/certs/server.csr -CA /etc/nginx/certs/ca.crt -CAkey /etc/nginx/certs/ca.key
+    -CAcreateserial -out /etc/nginx/certs/server.crt -days 365
+  args:
+    creates: /etc/nginx/certs/server.crt
+  become: yes
+
+- name: Generate client key and CSR
+  command: >
+    openssl req -new -newkey rsa:4096 -keyout /etc/nginx/certs/client.key -out /etc/nginx/certs/client.csr
+    -nodes -subj "/C=US/ST=State/L=City/O=Cronos/OU=Node/CN=Cronos Client"
+  args:
+    creates: /etc/nginx/certs/client.key
+  become: yes
+
+- name: Sign client certificate with CA
+  command: >
+    openssl x509 -req -in /etc/nginx/certs/client.csr -CA /etc/nginx/certs/ca.crt -CAkey /etc/nginx/certs/ca.key
+    -CAcreateserial -out /etc/nginx/certs/client.crt -days 365
+  args:
+    creates: /etc/nginx/certs/client.crt
+  become: yes
+
+- name: Clean up CSR and CA key
+  file:
+    path: "/etc/nginx/certs/{{ item }}"
+    state: absent
+  with_items:
+    - server.csr
+    - client.csr
+    - ca.key
+  become: yes
+  notify: Restart Nginx
